@@ -7,10 +7,9 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   ignoreDifferences:
-  - group: ''
-    kind: Secret
+  - kind: Secret
     jsonPointers:
-    - /data/my-password
+      - /data/my-password
   project: default
 
   source:
