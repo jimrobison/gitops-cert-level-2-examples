@@ -6,20 +6,6 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  ignoreDifferences:
-  - group: ""
-    kind: Secret
-    name: example-secret
-    namespace: example02
-    jsonPointers:
-    - /data/my-password
-  - group: apps
-    version: v1
-    name: simple-deployment
-    namespace: example02
-    kind: Deployment
-    jsonPointers:
-    - /metadata/annotations/creation
   project: default
 
   source:
