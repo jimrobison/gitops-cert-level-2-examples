@@ -9,8 +9,8 @@ spec:
   ignoreDifferences:
   - group: ""
     kind: Secret
-    name: *
-    namespace: *
+    name: "*"
+    namespace: "*"
     jsonPointers:
     - /data/my-password
   project: default
