@@ -9,7 +9,7 @@ spec:
   ignoreDifferences:
   - group: ""
     kind: Secret
-    jsonPointers:
+    jqPathExpressions:
     - '.data.my-password'
   project: default
 
